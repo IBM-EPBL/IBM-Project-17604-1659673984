@@ -1,0 +1,61 @@
+<html>
+<head>
+
+<title> Home page</title>
+<link rel="stylesheet" href="gokulstyle.css">
+</head>
+
+<body>
+
+
+<div class="content ">
+<h1>GLOBAL SALES DATA ANALAYTICS</ h1>
+<div class ="team";
+<h1>TEAM ID : PNT2022TMID21997</h1>
+</div>
+<div class ="intro";
+<h1><u><b>INTRODUCTION</b></u></h1>
+</div>
+<div class ="introll";
+<h1>Sales analytics refers to the technology and processes used to gather sales data and gauge <br> sales performance. Sales leaders use these metrics to set goals, improve internal processes, <br>and forecast future sales and revenue more accurately.
+
+  The goal of Global Sales Analytics is <br>always to simplify the information available to you. It helps to clearly understand  team’s <br> performance, sales trends, and opportunities. </h1>
+</div>
+
+<div class="newteam">
+<p><u><b>TEAM MEMBERS</b></u><br><br>1.Dineash.V<br>2.Gokulakrishnan.P<br>3.Hari haran.S<br>4.Maurice yessou rajdu</p>
+</div>
+<div class="buttoncontainer">
+    <button class="button" id="dashboard"><b>Sales Dashboard</b></button>
+    <button class="button" id="report"><b>Sales Report</b></button>
+    <button class="button" id="story"><b>Sales Story</b></button>
+</div>
+<style>
+body {
+  background-image: linear-gradient( to bottom, rgba(100, 10, 20, 0),  rgba(100, 20, 255, 0) ), url("stonks.webp");
+  background-size:cover;
+
+
+
+}
+
+</style>
+</body>
+<script>
+ const buttonlist = document.querySelectorAll('.button');
+ for(let i=0; i< buttonlist.length;i++){
+  if(buttonlist[i].id =='dashboard'){
+    buttonlist[i].addEventListener('click',()=>{window.open('https://eu2.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FSales%2BDashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018485be0722_00000001')});
+  }
+  else if(buttonlist[i].id =='report'){
+    buttonlist[i].addEventListener('click',()=>{window.open('https://eu2.ca.analytics.ibm.com/bi/?pathRef=.my_folders%2FGlobal%2BSales%2Breport&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=run&amp;prompt=false')});
+  }
+  else {
+    buttonlist[i].addEventListener('click',()=>{window.open('https://eu2.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FGlobal%2BSales%2BStory&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;sceneId=model000001848620b249_00000000&amp;sceneTime=0')});
+  }
+        
+ }
+
+ 
+</script>
+</html> 
